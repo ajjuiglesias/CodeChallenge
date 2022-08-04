@@ -65,3 +65,22 @@ checkObj("gift");
 
 Here because the args pass is a string, that mean he have quote. We need
 to use bracket notation.
+
+<!-- Hi this is Ajju Iglesias, i'm currently learning javascript. The above solution is not woring for me, I dont know the above is correct or not. The function checkObj should also take array as one of its parameter -->
+
+let myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj( obj , checkProp) {
+  // Your Code Here
+    if (obj.hasOwnProperty(checkProp)){
+        return obj[checkProp];
+    } 
+       return "Not Found";
+}
+
+// Test your code by modifying these values
+console.log(checkObj(myObj,"pet"));
